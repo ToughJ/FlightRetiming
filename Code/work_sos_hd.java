@@ -27,7 +27,7 @@ public class work_sos_hd {
 
     static String path = "../data/event/";
     static String INPUT_DIR = "../data/event/";
-    static String ROOT_OUTPUT_DIR = "../data/event/out_gamma3/";
+    static String ROOT_OUTPUT_DIR = "../data/event/out_gamma4/";
     static String OUTPUT_DIR = null;
 
     static int startDay, endDay;
@@ -54,7 +54,7 @@ public class work_sos_hd {
     static double MGap = 0.01, SGap = 0.01, HGap = 0.05;   // gap   M -master  S - separation H - whole
     static int STL = 60 * 20, HTL = 60 * 60, MTL = 20 * 60; //  time limit
     static double MINI = 0.00000000001;
-    static double Gamma = 2;  // Gamma
+    static double Gamma = 0.5;  // Gamma
 
     static double gamma = Gamma * 51;
     // bufferLimit TODO
@@ -63,16 +63,6 @@ public class work_sos_hd {
     static int control = 0;
 
     public static void main(String[] args) throws IloException, IOException {
-//        String filename = "Month8_Flights_test.csv"; // default
-//        String filename = "Month8_Flights.csv"; // default
-//        control = 0;
-//            startDay = 24;
-//            endDay = 24;
-//            startMonth = 7;
-//            endMonth = 7;
-//            run();
-
-//        control = 0;
         for (int i = 21; i <= 31; i++){
             startDay = i;
             endDay = i;
@@ -1068,6 +1058,8 @@ public class work_sos_hd {
                 SPModel.addLe(pDep[i], 0);
             else {
                 int j = Flights.get(i).preFID;
+                SPModel.addGe(SPModel.diff(pDep[i], pArr[j]),
+                        SPModel.diff(DArr[j], Flights.get(i).OPRBufferTT));
                 SPModel.addLe(SPModel.diff(pDep[i], pArr[j]),
                         SPModel.sum(SPModel.diff(DArr[j], Flights.get(i).OPRBufferTT),
                                 SPModel.prod(Flights.get(i).OPRBufferTT +
