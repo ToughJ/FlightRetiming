@@ -26,7 +26,9 @@ There are data obtain from ASQP for robust time-dependent model and robust non-t
 
 **This is the data pertaining to the robust time-dependent model used to generate the Time-Dependent Schedule (TDS).**
 - EventBased package
- > Our training set is constructed using data from a specific date range, namely June 22 to July 21. The data is organized into files named after the airport code and the type of event (departure or arrival). We extract the relevant data from these files to create our training set. Such as: - BeforeMonth8_ABQArrDelayStats.csv - BeforeMonth8_ABQDepDelayStats.csv
+ > Our training set is constructed using data from a specific date range, namely June 22 to July 21. The data is organized into files named after the airport code and the type of event (departure or arrival). We extract the relevant data from these files to create our training set. Such as: 
+ > - BeforeMonth8_ABQArrDelayStats.csv 
+ > - BeforeMonth8_ABQDepDelayStats.csv
  
  
  
