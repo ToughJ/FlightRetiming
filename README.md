@@ -1,6 +1,6 @@
 # FlightRetiming
 This repository contains datasets related to flight delays and the related code about modeling, which were used in the paper titled "Flight Retiming Problem under Time-Dependent Uncertainty".
-#### Code
+### Code
 **These are the custom classes that exist in this project.**
 - rtData.java   
 which include 
@@ -17,7 +17,7 @@ which include
 - scenarioGenerator.java
 - evaulatePerformance.java
 
-#### Data
+### Data
 There are data obtain from ASQP for the robust time-dependent model and the robust non-time-dependent model. 
 
 **This is the data for the basic flight information such as flight numbers, departure and arrival times, and delay information provided by ASQP.**
