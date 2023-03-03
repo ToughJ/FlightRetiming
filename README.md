@@ -33,7 +33,7 @@ There are data obtain from ASQP for the robust time-dependent model and the robu
  
 
 **This is the data pertaining to the robust non-time-dependent model used to generate the Non-Time-Dependent Schedule (NTDS).**
--LegBased package
+- LegBased package
   >This is also the training set, but for non-time-dependent model. For non-time-dependent models based on flight leg information, airport information is not necessary.
   >- BeforeMonth8_LegBasedDelayStats.csv
 
