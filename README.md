@@ -18,11 +18,10 @@ which include
 - evaulatePerformance.java
 
 #### Data
-There are data obtain from ASQP for robust time-dependent model and robust non-time-dependent model and also the generated the scenario set for evaluation.
+There are data obtain from ASQP for the robust time-dependent model and the robust non-time-dependent model. 
 
 **This is the data for the basic flight information such as flight numbers, departure and arrival times, and delay information provided by ASQP.**
 - Month8_Flights.csv
-
 
 **This is the data pertaining to the robust time-dependent model used to generate the Time-Dependent Schedule (TDS).**
 - EventBased package
@@ -35,8 +34,8 @@ There are data obtain from ASQP for robust time-dependent model and robust non-t
 
 **This is the data pertaining to the robust non-time-dependent model used to generate the Non-Time-Dependent Schedule (NTDS).**
 -LegBased package
-  This is also the training set, but for non-time-dependent model. For non-time-dependent models based on flight leg information, airport information is not necessary.
-  - BeforeMonth8_LegBasedDelayStats.csv
+  >This is also the training set, but for non-time-dependent model. For non-time-dependent models based on flight leg information, airport information is not necessary.
+  >- BeforeMonth8_LegBasedDelayStats.csv
 
 Both the TDS and NTDS files contain sample mean and standard deviation values for each group, as well as the covariance matrix.
 
