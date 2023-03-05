@@ -28,9 +28,6 @@ There are data obtain from ASQP for the robust time-dependent model and the robu
   > Our training set is constructed using data from a specific date range, namely June 22 to July 21. The data is organized into files named after the airport code and the type of event (departure or arrival). We extract the relevant data from these files to create our training set. Such as: 
   > - BeforeMonth8_ABQArrDelayStats.csv 
   > - BeforeMonth8_ABQDepDelayStats.csv
- 
- 
- 
 
 **This is the data pertaining to the robust non-time-dependent model used to generate the Non-Time-Dependent Schedule (NTDS).**
 - LegBased package
@@ -44,4 +41,6 @@ Such as:
 - Month8_ABQArrDelayStats.csv
 - Month8_ABQDepDelayStats.csv
 
+As the data size is large, we upload compressed files on Github. Additionally, we provide an alternative option by sharing a Google Drive link as follows.
+> https://drive.google.com/drive/folders/127lP3PpP5ZAG7_swXB7ZoOo7ru5DiIwe?usp=share_link
 
